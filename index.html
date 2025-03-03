@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form role="search" id="search-form">
+          <label for="search-input">Search for Pokémon ID or Name:
+          </label>
+          <div id="search-bar">
+            <input id="search-input" required />
+            <button id="search-button">Search</button>
+          </div>
+        </form>
+        <div class="output">
+          <div class="bio">
+            <h2>
+              #<span id="pokemon-id">0</span>
+              <span id="pokemon-name"></span>
+              </h2>
+            <p>Height: <span id="height">--</span> | Weight: <span id="weight">--</span></p>
+            <div id="types">
+              
+            </div>
+            <div id="image-container">
+            </div>
+          </div>
+          <div class="stats">
+            <table>
+              <thead>
+                <tr>
+                  <th>Base</th>
+                  <th>Stats</th>
+                </tr>
+              </thead>
+              <tbody id="stats-container">
+                <tr>
+                  <td>HP:</td>
+                  <td id="hp" class="stat-number">--</td>
+                </tr>
+                <tr>
+                  <td>Attack:</td>
+                  <td id="attack" class="stat-number">--</td>
+                </tr>
+                <tr>
+                  <td>Defense:</td>
+                  <td id="defense" class="stat-number">--</td>
+                </tr>
+                <tr>
+                  <td>Sp. Attack:</td>
+                  <td id="special-attack" class="stat-number">--</td>
+                </tr>
+                <tr>
+                  <td>Sp. Defense:</td>
+                  <td id="special-defense" class="stat-number">--</td>
+                </tr>
+                <tr>
+                  <td>Speed:</td>
+                  <td id="speed" class="stat-number">--</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="controls">
+          <button id="prev-button" disabled> Previous </button>
+          <button id="next-button" disabled> Next </button>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

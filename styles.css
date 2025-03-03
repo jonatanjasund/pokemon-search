@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  font-size: 16px;
+}
+
+h2 {
+  line-height: 32px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* background-color: aliceblue; */
+  width: 325px;
+  border: 2px solid lightgray;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.output {
+  color: #000;
+  width: calc(100% - 48px);
+  padding: 24px;
+  gap: 16px;
+}
+
+.bio {
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio,
+.stats {
+  width: 100%;
+}
+
+.stat-number {
+  text-align: center;
+  color: gray;
+}
+
+#types {
+  margin-top: 4px;
+}
+
+.type {
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+#search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 24px 16px;
+  background-color: #E21C25;
+  color: #f0f0f0;
+  font-size: 1.2rem;
+}
+
+#search-bar {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  border: 8px solid #222224;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+#search-bar,
+#search-bar * {
+  background-color: #222224;
+}
+
+#search-input {
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  margin-right: 8px;
+  padding-left: 16px;
+  background-color: #f0f0f0;
+}
+
+#search-button {
+  background-color: #f0f0f0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  font-size: 1.3rem;
+}
+
+th:first-of-type {
+  text-align: left;
+}
+
+td:first-child {
+  padding-left: 8px;
+}
+
+tr {
+  border-bottom: 1px solid lightgray;
+  height: 32px;
+}
+
+/* tbody > tr:nth-child(odd) {
+  background-color: lightgray;
+} */
+
+#image-container {
+  width: 100%;
+  height: 100%;
+}
+
+#sprite {
+  width: 100%;
+  height: calc(225px - 72px);
+  object-fit: contain;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px 8px;
+  height: 40px;
+}
+
+button {
+  width: auto;
+  border-radius: 40px;
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 650px;
+  }
+
+  .output {
+    display: flex;
+  }
+
+  .bio,
+  .stats {
+    width: 100%;
+    margin: 0;
+  }
+
+  .stats {
+    max-width: 180px;
+  }
+}
